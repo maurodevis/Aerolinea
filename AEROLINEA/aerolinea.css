@@ -1,16 +1,74 @@
-.formulario{
-    margin-left: 40%;
-    font-family: tahoma;
-    
+.grid_container{
+    min-height: 100%;
+    min-width: 100%;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "footer";
 }
 
+.body{
+    height: 100px;
+
+}
+
+.imagen_logo{  
+    height: 80px;
+}
+
+.div1{
+    margin-left: 20px;
+    padding:24px;
+}
+
+.titulo_prin{
+    color: aliceblue;
+}
+
+.header{
+    background-color: #7933DA;
+    height: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.articulo{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario ol{
+    display: flex;
+    flex-direction: column;  
+}
+
+.formulario label{
+    font-weight: 500;
+}
+
+.formulario input{ 
+    width: 500px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
 .boton{
-    border-radius: 8px;
-    background-color: #14CAE3;
-    width: 156px;
-    height: 40px;
-    margin-left: 8px;
-    font-family: tahoma;
+    font-size: 18px ;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #7933DA;
+    border-radius: 999px ;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 38px;
+    margin: 0;
+    padding: 0 25px;
 }
 
 .genero{
@@ -22,7 +80,6 @@
     width: 250px;
     height: 200px;
     margin-left: 40%;
- 
 }
 
 .body{

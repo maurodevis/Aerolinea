@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AEROLINEA</title>
-    <link rel="icon" type="images/icon2.png" href="images/icon2.png">
+    <link rel="icon" href="images/aeropuerto.png">
     <link rel="stylesheet" href="aerolinea.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <script src="aerolinea.js"></script>
 
 </head>
+
 <body>
-    <div>
-        <img src="images/avion.jpg  " alt="Es un logo aeronautico" class="logo">
+    <div class="grid_container">
+        <header class="header">
+            <div class="div1">
+                <img src="images/aeropuerto.png" alt="logotipo aerolinea" class="imagen_logo">
+            </div>
+            <div>
+                <h1 class="titulo_prin">AEROLINEA MAURICIO</h1>
+            </div>
+        </header>
+        <nav class="navbar">navbar</nav>
+        <section>
+            <article class="articulo">
+                <form class="formulario" action="validar" method="post" onsubmit=" return validacion_form(event);">
+                    <ol>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <p id="mensaje"></p>
+                    </ol>
+                    <ol>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido">
+                    </ol>
+                    <ol>
+                        <label for="dirección">Direccion</label>
+                        <input type="text" id="direccion" name="direccion">
+                    </ol>
+                    <ol>
+                        <label for="telefono">Telefono</label>
+                        <input type="number" id="telefono" name="telefono">
+                    </ol>
+                    <ol>
+                        <label for="correo electronico">Correo Electronico</label>
+                        <input type="email" id="correo_electronico" name="correo electronico">
+                    </ol>
+                    <ol>
+                        <label for="edad ">Edad</label>
+                        <input type="number" id="edad" name="edad ">
+                    </ol>
+                    <ol>
+                        <label for="peso de equipaje ">Peso de equipaje</label>
+                        <input type="number" id="peso_equipaje" name="peso de equipaje ">
+                    </ol>
+                    <ol>
+                        <label for="genero ">Genero</label>
+                        <select name="genero" id="genero" class="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </ol>
+                    <ol>
+                        <input type="submit" class="boton" id="enviar" value="ENVIAR FORMULARIO" onclick="/*location.href='aerolinea2.html'*/">
+                    </ol>
+                </form>
+            </article>
+        </section>
+        <footer class="footer">footer</footer>
     </div>
-    <div>
-    <form action="" class="formulario">
-        <ol>
-            <label for="nombre">nombre</label>
-            <br>
-        <input type="text" id="nombre" name="nombre" required>
-        </ol>
-        <ol>
-            <label for="apellido">apellido</label>
-            <br>
-        <input type="text" id="apellido" name="apellido">
-        </ol>
-        <ol>
-            <label for="dirección">direccion</label>
-            <br>
-        <input type="text" id="direccion" name="direccion">
-        </ol>
-        <ol>
-            <label for="telefono">telefono</label>
-            <br>
-        <input type="number" id="telefono" name="telefono">
-        </ol>
-        <ol>
-            <label for="correo electronico">correo electronico</label>
-            <br>
-        <input type="email" id="correo_electronico" name="correo electronico">
-        </ol>
-        <ol>
-            <label for="edad ">edad</label>
-            <br>
-        <input type="number" id="edad" name="edad ">
-        </ol>
-        <ol>
-            <label for="peso de equipaje ">peso de equipaje</label>
-            <br>
-        <input type="number" id="peso de equipaje" name="peso de equipaje ">
-        </ol>
-        <ol>
-            <label for="genero ">Genero</label>
-            <br>
-            <select name="genero" id="genero" class="genero">
-                <option value="masculino">masculino</option>
-                <option value="femenino">femenino</option>
-                <option value="otro">otro</option>
-            </select>
-        <!--<input type="number" id="Genero" name="Genero "> <<-->
-        </ol>
-        <ol>
-            <br>
-        <input type="submit" class="boton" id="enviar" name="ENVIAR FORMULARIO " value="ENVIAR FORMULARIO" onclick="validarcorreo()">
-        </ol>
-    </form>
-</div>
 </body>
+
 </html>
