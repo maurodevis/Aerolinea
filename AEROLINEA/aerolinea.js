@@ -41,7 +41,7 @@ function validacion_form(event) {
         mensa.style.color = "red";
         return;
     }
-    if (isNaN(peso_equipaje.value) || peso_equipaje.value <= 0) {
+    if (isNaN(peso_equipaje.value) || peso_equipaje.value <= 0 || peso_equipaje.value >25) {
         mensa.textContent = "Ingrese un peso de equipaje válido";
         mensa.style.color = "red";
         return;
